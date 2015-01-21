@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Feedvids</string>
+    <string name="action_settings">Settings</string>
+    <string name="media_route_menu_title">cast</string>
+    <string name="action_update">Update</string>
+    <string name="action_send_all">Send playlist</string>
+    <string name="archive_text">Archive</string>
+    <string name="play_title">Play</string>
+    <string name="delete_title">Delete</string>
+    <string name="external_play_title">Play out</string>
+    <string name="share_title">Share</string>
+    <string name="pocket_access_token_pref">pocket_access_token_pref</string>
+    <string name="remove_oauth_token">Remove credentials</string>
+
+</resources>

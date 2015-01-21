@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/ctx_option_delete"
+        android:title="@string/delete_title"/>
+    <item
+        android:id="@+id/ctx_option_archive"
+        android:title="@string/archive_text"/>
+    <item
+        android:id="@+id/ctx_option_external_play"
+        android:title="@string/external_play_title"/>
+    <item
+        android:id="@+id/ctx_option_play"
+        android:title="@string/play_title"/>
+    <item
+        android:id="@+id/ctx_option_share"
+        android:title="@string/share_title"/>
+
+</menu>

@@ -1,0 +1,39 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:context="com.feedvids.controller.MainActivity">
+    <item
+            android:id="@+id/action_settings"
+            android:title="@string/action_settings"
+            android:orderInCategory="100"
+            app:showAsAction="never"/>
+    <item
+            android:id="@+id/action_update"
+            android:title="@string/action_update"
+            android:orderInCategory="100"
+            android:icon="@android:drawable/ic_popup_sync"
+            app:showAsAction="always"
+            android:onClick="updateOnClick"/>
+
+    <item
+            android:id="@+id/action_send_all"
+            android:title="@string/action_send_all"
+            android:orderInCategory="100"
+            app:showAsAction="never"
+            android:onClick="sendAllOnClick"/>
+
+    <item
+            android:id="@+id/remove_oauth_token"
+            android:title="@string/remove_oauth_token"
+            android:orderInCategory="100"
+            app:showAsAction="never"
+            android:onClick="removeOAuthToken"/>
+
+    <item
+            android:id="@+id/media_route_menu_item"
+            android:title="@string/media_route_menu_title"
+            app:actionProviderClass="android.support.v7.app.MediaRouteActionProvider"
+            app:showAsAction="always"
+            />
+
+</menu>

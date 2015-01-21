@@ -1,0 +1,39 @@
+<!--
+  A button bar is a set of buttons at the bottom of an activity.
+  An example is an AlertDialog with OK/Cancel buttons.
+ 
+  Note that something similar can be accomplished using a
+  split action bar and text-only action buttons, but this is an
+  alternate presentation that's often preferred.
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:divider="?android:attr/dividerHorizontal"
+    android:showDividers="middle">
+
+    <TextView android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="Hello World" />
+
+    <LinearLayout style="?android:attr/buttonBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="One" />
+
+        <Button style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Two" />
+    </LinearLayout>
+</LinearLayout>

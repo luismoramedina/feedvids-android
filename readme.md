@@ -1,0 +1,20 @@
+
+-----------------
+- NEW search
+- NEW Order manually
+- NEW filter by tag
+- NEW Mark watched when you watch it
+- NEW swipe = delete
+- NEW Save last watched
+- NEW Colors by item
+
+----------------- DONE
+- NEW rev / fwd
+- NEW get video info
+    - Url for request data to youtube: api key and more than one video, snippet and contentDetails
+    https://www.googleapis.com/youtube/v3/videos?id=nvr7T4sfads,7lCDEYXw3mM,AxvPIJj38jI&key=AIzaSyDvmmt8JxytxYgeWCOnmYPIySaG9tGBPNc%20&part=snippet,contentDetails,statistics,status
+    DOC: https://developers.google.com/youtube/v3/getting-started
+- NEW display current video playing
+- BUG order when more than one videos
+- NEW share
+- NEW open on youtube

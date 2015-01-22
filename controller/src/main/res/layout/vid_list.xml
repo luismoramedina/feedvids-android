@@ -1,90 +1,89 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<LinearLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_height="match_parent"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <ListView
+        android:id="@+id/listview"
         android:layout_width="match_parent"
-        android:orientation="vertical">
-
-
-    <ListView xmlns:android="http://schemas.android.com/apk/res/android"
-              android:id="@+id/listview"
-              android:layout_width="match_parent"
-              android:layout_height="0px"
-              android:layout_weight="1"
-        />
+        android:layout_height="0px"
+        android:layout_weight="1" />
 
     <LinearLayout
-            xmlns:android="http://schemas.android.com/apk/res/android"
-            android:id="@+id/LinearLayout1"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:orientation="horizontal"
->
+
+        android:id="@+id/LinearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
 
         <ImageButton
-                android:layout_width="wrap_content"
-                android:layout_height="60dp"
-                android:id="@+id/button_prev"
-                android:layout_weight="1"
-            android:src="@android:drawable/ic_media_previous"
-                android:onClick="prev"
-            android:clickable="true"
-            android:focusable="true"
-            android:contentDescription="Previous vid" />
-        <ImageButton
-                android:layout_width="wrap_content"
-                android:layout_height="60dp"
-                android:id="@+id/button_rew"
-                android:layout_weight="1"
-            android:src="@android:drawable/ic_media_rew"
-                android:onClick="rewind"
-            android:clickable="true"
-            android:focusable="true"
-        android:contentDescription="Rewind" />
-        <ImageButton
+            android:id="@+id/button_prev"
             android:layout_width="wrap_content"
-                android:layout_height="60dp"
-                android:id="@+id/button_playpause"
+            android:layout_height="60dp"
             android:layout_weight="1"
-            android:src="@android:drawable/ic_media_play"
-                android:onClick="playPause"
             android:clickable="true"
+            android:contentDescription="Previous vid"
             android:focusable="true"
-            android:contentDescription="Play/pause" />
+            android:onClick="prev"
+            android:src="@android:drawable/ic_media_previous" />
 
         <ImageButton
-                android:layout_width="wrap_content"
-                android:layout_height="60dp"
-                android:id="@+id/button_fwd"
-                android:layout_weight="1"
-            android:src="@android:drawable/ic_media_ff"
-                android:onClick="forward"
+            android:id="@+id/button_rew"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_weight="1"
             android:clickable="true"
+            android:contentDescription="Rewind"
             android:focusable="true"
-            android:contentDescription="Forward" />
+            android:onClick="rewind"
+            android:src="@android:drawable/ic_media_rew" />
 
         <ImageButton
-                android:layout_width="wrap_content"
-                android:layout_height="60dp"
-                android:id="@+id/button_next"
-                android:layout_weight="1"
-            android:src="@android:drawable/ic_media_next"
-                android:onClick="next"
+            android:id="@+id/button_playpause"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_weight="1"
             android:clickable="true"
+            android:contentDescription="Play/pause"
             android:focusable="true"
-            android:contentDescription="Next video" />
+            android:onClick="playPause"
+            android:src="@android:drawable/ic_media_play" />
 
         <ImageButton
-                android:layout_width="wrap_content"
-                android:layout_height="60dp"
-                android:id="@+id/button_delete"
-                android:layout_weight="1"
-            android:src="@android:drawable/ic_menu_delete"
-                android:onClick="delete"
+            android:id="@+id/button_fwd"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_weight="1"
             android:clickable="true"
+            android:contentDescription="Forward"
             android:focusable="true"
-            android:contentDescription="Delete vid" />
+            android:onClick="forward"
+            android:src="@android:drawable/ic_media_ff" />
+
+        <ImageButton
+            android:id="@+id/button_next"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:contentDescription="Next video"
+            android:focusable="true"
+            android:onClick="next"
+            android:src="@android:drawable/ic_media_next" />
+
+        <ImageButton
+            android:id="@+id/button_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:contentDescription="Delete vid"
+            android:focusable="true"
+            android:onClick="delete"
+            android:src="@android:drawable/ic_menu_delete" />
 
     </LinearLayout>
 

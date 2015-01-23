@@ -139,7 +139,7 @@ public class OAuthActivity extends Activity implements View.OnClickListener, Not
 
     //TODO do request (rest -> https://getpocket.com/v3/oauth/request)
     private void launchOAuthProccess(String authUrl) {
-        String data = new PocketServiceImpl(this, null, null).getRequestToken("url");
+        String data = new PocketServiceImpl(this, getString(R.string.consumer_key), null).getRequestToken("url");
 
     }
 

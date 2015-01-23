@@ -26,10 +26,10 @@ public class PocketServiceImpl implements PocketService {
     public PocketServiceImpl() {
     }
 
-    public PocketServiceImpl (Notificable notifcable, String consumerKey, String access_token) {
+    public PocketServiceImpl (Notificable notifcable, String consumerKey, String accessToken) {
         this.notificable = notifcable;
         this.consumerKey = consumerKey;
-        this.accessToken = access_token;
+        this.accessToken = accessToken;
     }
 
     @Override
@@ -50,7 +50,7 @@ public class PocketServiceImpl implements PocketService {
             return data
 */
         String data = "{\"consumer_key\": \"" + consumerKey
-                + "\", \"accessToken\": \"" + accessToken
+                + "\", \"access_token\": \"" + accessToken
                 + "\", \"contentType\": \"video\""
                 + ", \"sort\": \"newest\""
                 + ", \"detailType\": \"complete\""
@@ -101,7 +101,7 @@ public class PocketServiceImpl implements PocketService {
         String message = "[{\"action\": \"" + action + "\", \"item_id\": \"" + item + "\"}]";
 
         String data = "{\"consumer_key\": \"" + consumerKey
-                + "\", \"accessToken\": \"" + accessToken
+                + "\", \"access_token\": \"" + accessToken
                 + "\", \"actions\": " + message +
                 "}";
 

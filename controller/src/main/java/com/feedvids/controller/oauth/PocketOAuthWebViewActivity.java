@@ -57,7 +57,7 @@ public class PocketOAuthWebViewActivity extends Activity {
                     new PocketServiceImpl(new Notificable() {
                         @Override
                         public void notifyActionFinish(String action, Object data) {
-                            Toast.makeText(getApplicationContext(), (CharSequence) data, Toast.LENGTH_LONG).show();
+                            //Toast.makeText(getApplicationContext(), (CharSequence) data, Toast.LENGTH_LONG).show();
                             try {
                                 JSONObject jsonObject = new JSONObject(data.toString());
                                 String accessToken = (String) jsonObject.get("access_token");

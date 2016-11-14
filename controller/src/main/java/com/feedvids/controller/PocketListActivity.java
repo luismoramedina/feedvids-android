@@ -218,9 +218,7 @@ public class PocketListActivity extends ActionBarActivity implements Notificable
                 return true;
             case R.id.ctx_option_external_play:
 //                String url = "http://www.youtube.com/?v=" + videoId;
-                String url = "vnd.youtube:" + videoId;
-                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
-                startActivity(browserIntent);
+                playOut(videoId);
                 Toast.makeText(targetView.getContext(), "Play out option", Toast.LENGTH_LONG).show();
                 return true;
 
@@ -239,6 +237,16 @@ public class PocketListActivity extends ActionBarActivity implements Notificable
             default:
                 return super.onContextItemSelected(item);
         }
+    }
+
+    /**
+     * play on youtube
+     * @param videoId the id
+     */
+    private void playOut(String videoId) {
+        String url = "vnd.youtube:" + videoId;
+        Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
+        startActivity(browserIntent);
     }
 
     private void markForDelete(int position) {
@@ -312,7 +320,7 @@ public class PocketListActivity extends ActionBarActivity implements Notificable
             public void onItemClick(AdapterView<?> parent, final View view,
                                     int position, long id) {
                 final VidItem item = (VidItem) parent.getItemAtPosition(position);
-                view.animate().setDuration(2000).alpha(0).withEndAction(new Runnable() {
+                view.animate().setDuration(200).alpha(0).withEndAction(new Runnable() {
                     @Override
                     public void run() {
                         //videoList.remove(item);
@@ -320,7 +328,7 @@ public class PocketListActivity extends ActionBarActivity implements Notificable
                         view.setAlpha(1);
 
                         currentVideoItem = item;
-                        sendPlayVidById(item.id);
+                        playOut(item.id);
                     }
                 });
                 adapter.notifyDataSetChanged();
